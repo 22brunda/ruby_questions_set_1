@@ -33,3 +33,34 @@
   # Result 1
   # 2
 
+  class Poly 
+    def add_con(person) 
+      person.add_con 
+    end 
+  end
+class Addition 
+ def add_con 
+   puts "Enter the first integer:" 
+   @a=Integer(gets) 
+   puts "Enter the second integer:" 
+   @b=Integer(gets) 
+   @c=@a+@b 
+   puts "Result : #{@c}" 
+ end 
+end 
+class Concatination 
+ def add_con 
+  puts "Enter the first integer:" 
+  @a=Integer(gets) 
+  puts "Enter the second integer:" 
+  @b=Integer(gets) 
+  print "#{@a}#{@b}\n" 
+end 
+end 
+welcome = Poly.new 
+puts "=======Addition========="
+a = Addition.new 
+welcome.add_con(a) 
+puts "========Concatination======="
+c= Concatination.new
+welcome.add_con(c)
